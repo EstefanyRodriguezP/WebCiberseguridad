@@ -78,7 +78,7 @@
         </ul>
       </section>
       <section class="container py-4" data-bs-theme="dark">
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card h-100">
               <div class="card-header">🔐 SEGURIDAD DE CONTRASEÑAS</div>
@@ -277,28 +277,29 @@
       </section>
 
       <!-- Modal -->
-      <div class="modal fade" id="modalTest" tabindex="-1">
+      <div
+        class="modal fade"
+        id="modalTest"
+        tabindex="-1"
+        aria-labelledby="modalTestLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog">
           <div class="modal-content bg-dark text-white">
             <div class="modal-header">
-              <h5 class="modal-title">Test de Seguridad</h5>
+              <h5 class="modal-title" id="modalTestLabel">Test de Seguridad</h5>
               <button
                 type="button"
-                class="btn-close"
+                class="btn-close btn-close-white"
                 data-bs-dismiss="modal"
+                aria-label="Cerrar"
               ></button>
             </div>
-            <div class="modal-body">
-              <p>¿Qué es el phishing?</p>
-              <select id="respuestaTest" class="form-select">
-                <option>Un videojuego online</option>
-                <option>Una técnica de ataque para robar información</option>
-                <option>Una herramienta de seguridad</option>
-              </select>
-              <div id="feedbackTest" class="mt-3"></div>
+            <div class="modal-body" id="modalBodyTest">
+              <!-- Aquí se cargarán dinámicamente las preguntas -->
             </div>
             <div class="modal-footer">
-              <button class="btn btn-success" onclick="verificarRespuesta()">
+              <button class="btn btn-success" id="btnVerificar">
                 Verificar
               </button>
             </div>
@@ -311,26 +312,6 @@
       <h6 class="text-center text-white">© WebDefensa 2025</h6>
     </footer>
 
-    <script defer>
-      function verificarRespuesta() {
-        const resp = document.getElementById("respuestaTest").value;
-        const feedback = document.getElementById("feedbackTest");
-        if (resp === "Una técnica de ataque para robar información") {
-          feedback.innerHTML = "<span class='text-success'>¡Correcto!</span>";
-        } else {
-          feedback.innerHTML =
-            "<span class='text-danger'>Incorrecto. Intenta de nuevo.</span>";
-        }
-      }
-
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .getElementById("formContacto")
-          .addEventListener("submit", function (e) {
-            e.preventDefault();
-            alert("¡Formulario enviado correctamente!");
-          });
-      });
-    </script>
+    <script defer src="main.js"></script>
   </body>
 </html>

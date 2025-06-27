@@ -1,0 +1,13 @@
+# Este archivo se incluye como parte de una práctica de configuración.
+# No hay archivos que ignorar en este proyecto actualmente.
+
+# Ignorar posibles archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de configuración del editor
+.vscode/
+.idea/
+
+# Ignorar archivos de logs (si se agregaran en el futuro)
+*.log
