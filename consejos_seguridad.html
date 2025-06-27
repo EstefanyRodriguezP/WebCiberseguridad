@@ -23,7 +23,7 @@
     <header>
       <nav class="px-3 navbar navbar-expand-lg navbar-dark text-body">
         <div class="container-fluid">
-          <a class="navbar-brand me-auto fw-bold" href="inicio.html"
+          <a class="navbar-brand me-auto fw-bold" href="index.html"
             >WebDefensa</a
           >
           <button
@@ -40,7 +40,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="inicio.html">Inicio</a>
+                <a class="nav-link" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="amenazas_comunes.html"
@@ -60,37 +60,221 @@
 
     <main class="py-5">
       <h1 class="text-center mb-4 text-white">Consejos para Navegar Seguro</h1>
+      <section class="container">
+        <p>
+          Te entregamos una lista de buenas prácticas para protegerte en línea,
+          organizadas por categorías para facilitar su comprensión y aplicación.
+          En caso de incidenteS:
+        </p>
 
-      <ul>
-        <li>Usa contraseñas seguras y únicas.</li>
-        <li>Habilita la autenticación de dos factores.</li>
-        <li>No compartas información sensible por correo o redes sociales.</li>
-        <li>Actualiza tu software regularmente.</li>
-        <li>Desconfía de enlaces o archivos adjuntos sospechosos.</li>
-      </ul>
+        <ul>
+          <li>
+            Reporta accesos sospechosos o actividades inusuales de inmediato.
+          </li>
+          <li>
+            Desconecta el dispositivo afectado de internet si detectas malware o
+            ransomware.
+          </li>
+        </ul>
+      </section>
+      <section class="container py-4" data-bs-theme="dark">
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100">
+              <div class="card-header">🔐 SEGURIDAD DE CONTRASEÑAS</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Usa contraseñas fuertes (mínimo 12 caracteres, con mayúsculas,
+                  minúsculas, números y símbolos).
+                </li>
+                <li class="list-group-item">
+                  Evita contraseñas obvias, como "123456" o "password".
+                </li>
+                <li class="list-group-item">
+                  No reutilices contraseñas entre servicios diferentes.
+                </li>
+                <li class="list-group-item">
+                  Usa un gestor de contraseñas (como Bitwarden, 1Password, o
+                  LastPass).
+                </li>
+                <li class="list-group-item">
+                  Cambia tus contraseñas periódicamente, sobre todo si sospechas
+                  de una brecha.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100">
+              <div class="card-header">🔑 AUTENTICACIÓN</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Activa la autenticación en dos pasos (2FA) siempre que sea
+                  posible. Esto añade una capa extra de seguridad más allá de la
+                  contraseña.
+                </li>
+                <li class="list-group-item">
+                  Usa aplicaciones de autenticación como Authy, Google
+                  Authenticator o Microsoft Authenticator, en lugar de mensajes
+                  SMS, que pueden ser interceptados.
+                </li>
+                <li class="list-group-item">
+                  Evita guardar códigos de recuperación en el mismo dispositivo
+                  que protegen. Guarda los códigos de respaldo impresos o en un
+                  gestor de contraseñas seguro.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100">
+              <div class="card-header">🌐 NAVEGACIÓN SEGURA</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Evita hacer clic en enlaces sospechosos o desconocidos,
+                  incluso si vienen de contactos conocidos.
+                </li>
+                <li class="list-group-item">
+                  Verifica las URLs antes de ingresar información sensible (que
+                  comiencen con https://).
+                </li>
+                <li class="list-group-item">
+                  Evita ingresar datos personales en sitios web no confiables o
+                  que parecen copias (phishing).
+                </li>
+                <li class="list-group-item">
+                  Instala extensiones de navegador de seguridad, como HTTPS
+                  Everywhere o uBlock Origin.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100">
+              <div class="card-header">🖥️ SEGURIDAD DEL DISPOSITIVO</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Mantén tu sistema operativo, navegador y apps actualizados.
+                </li>
+                <li class="list-group-item">
+                  Usa un antivirus confiable y mantenlo activado y actualizado.
+                </li>
+                <li class="list-group-item">
+                  Activa el firewall de tu sistema operativo.
+                </li>
+                <li class="list-group-item">
+                  Evita descargar software desde fuentes no oficiales.
+                </li>
+                <li class="list-group-item">
+                  Desactiva la ejecución automática de medios extraíbles (USB,
+                  discos externos, etc.)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100">
+              <div class="card-header">📧 CORREO Y MENSAJERÍA</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Desconfía de correos urgentes que piden datos o pagos.
+                </li>
+                <li class="list-group-item">
+                  Verifica la dirección de correo del remitente, no solo el
+                  nombre.
+                </li>
+                <li class="list-group-item">
+                  No abras archivos adjuntos desconocidos o inesperados.
+                </li>
+                <li class="list-group-item">
+                  Usa servicios de correo con protección antiphishing (como
+                  Gmail).
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100">
+              <div class="card-header">☁️ COPIAS DE SEGURIDAD</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Haz copias de seguridad regulares de tus archivos importantes.
+                </li>
+                <li class="list-group-item">
+                  Usa almacenamiento externo o en la nube segura (como Google
+                  Drive, OneDrive, iCloud, etc.).
+                </li>
+                <li class="list-group-item">
+                  Desconecta los discos duros externos después de hacer copias
+                  para evitar infecciones por ransomware.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100">
+              <div class="card-header">📱 DISPOSITIVOS MÓVILES</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Descarga apps solo de tiendas oficiales (Google Play, App
+                  Store).
+                </li>
+                <li class="list-group-item">
+                  Revisa los permisos de las aplicaciones y desactiva los
+                  innecesarios.
+                </li>
+                <li class="list-group-item">
+                  Activa el bloqueo de pantalla con PIN, patrón o biometría.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100">
+              <div class="card-header">🧠 EDUCACIÓN Y CONCIENCIA</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Capacítate regularmente en ciberseguridad.
+                </li>
+                <li class="list-group-item">
+                  Aprende a identificar intentos de phishing y estafas comunes.
+                </li>
+                <li class="list-group-item">
+                  Educa a tu familia o empleados sobre buenas prácticas
+                  digitales.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Formulario -->
-      <h2 class="mt-5">Solicita más información</h2>
-      <form id="formContacto" class="mt-3">
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre" required />
-        </div>
-        <div class="mb-3">
-          <label for="correo" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="correo" required />
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
+      <section class="container" data-bs-theme="dark">
+        <h2 class="mt-5">Solicita más información</h2>
+        <form id="formContacto" class="mt-3">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required />
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" required />
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </section>
 
       <!-- Botón para abrir el modal -->
-      <button
-        class="btn btn-info mt-4"
-        data-bs-toggle="modal"
-        data-bs-target="#modalTest"
-      >
-        Realizar Test de Seguridad
-      </button>
+      <section class="container">
+        <button
+          class="btn btn-info mt-4"
+          data-bs-toggle="modal"
+          data-bs-target="#modalTest"
+        >
+          Realizar Test de Seguridad
+        </button>
+      </section>
 
       <!-- Modal -->
       <div class="modal fade" id="modalTest" tabindex="-1">
@@ -122,8 +306,9 @@
         </div>
       </div>
     </main>
+
     <footer>
-      <h6 class="text-center text-white">WebDefensa 2025</h6>
+      <h6 class="text-center text-white">© WebDefensa 2025</h6>
     </footer>
 
     <script defer>
