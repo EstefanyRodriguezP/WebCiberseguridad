@@ -12,7 +12,16 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.card,
+.card {
+  border: 1px solid white;
+}
+
+.card-img-top {
+  height: 250px;
+  width: 200px;
+  object-fit: cover;
+}
+
 .accordion-item,
 .modal-content {
   background-color: #1e1e1e;

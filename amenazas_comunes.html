@@ -57,99 +57,275 @@
         </div>
       </nav>
     </header>
+
     <main class="py-5">
-      <h1 class="text-center mb-5">Amenazas Cibernéticas Comunes</h1>
+      <h1 class="text-center mb-5 text-white">Amenazas Cibernéticas Comunes</h1>
 
       <!-- Tarjetas -->
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card bg-dark text-white h-100">
-            <div class="card-body">
-              <h5 class="card-title">Phishing</h5>
-              <p class="card-text">
-                Suplantación de identidad para engañar al usuario y obtener
-                información confidencial.
-              </p>
+      <section class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-5">
+          <div class="col">
+            <div class="card bg-dark text-white h-100">
+              <img
+                src="assets/images/phishing.webp"
+                class="card-img-top"
+                alt="phishing"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Phishing</h5>
+                <p class="card-text">
+                  El phishing es una técnica de engaño en la que un atacante se
+                  hace pasar por una entidad confiable para obtener información
+                  confidencial del usuario (como contraseñas, números de
+                  tarjetas o datos bancarios).
+                </p>
+                <p>Formas comunes de phishing:</p>
+                <ul>
+                  <li>
+                    Correos electrónicos falsos: Imitan a bancos, redes sociales
+                    o servicios conocidos.
+                  </li>
+                  <li>
+                    Mensajes SMS (smishing): Contienen enlaces maliciosos o
+                    instrucciones falsas.
+                  </li>
+                  <li>
+                    Llamadas telefónicas (vishing): El atacante finge ser de
+                    soporte técnico o de seguridad.
+                  </li>
+                  <li>
+                    Webs falsas: Páginas que imitan sitios legítimos para
+                    capturar tus credenciales.
+                  </li>
+                </ul>
+                <p>
+                  Consecuencias: Robo de identidad, fraude financiero, pérdida
+                  de acceso a cuentas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white h-100">
+              <img
+                src="assets/images/ransomware.jpg"
+                class="card-img-top"
+                alt="ransomware"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ransomware</h5>
+                <p class="card-text">
+                  Es un tipo de malware que bloquea el acceso a tus archivos o
+                  sistema y exige un pago (ransom/rescate) para liberarlos.
+                </p>
+                <p>¿Cómo actúa?</p>
+                <ul>
+                  <li>
+                    Se instala (usualmente por un archivo adjunto infectado o
+                    enlace malicioso).
+                  </li>
+                  <li>Cifra los archivos del usuario.</li>
+                  <li>
+                    Muestra un mensaje exigiendo el pago en criptomonedas para
+                    recuperar los datos.
+                  </li>
+                </ul>
+                <p>
+                  Consecuencias: Pérdida de datos, paralización de operaciones,
+                  extorsión económica. Incluso pagando, no hay garantía de
+                  recuperar los archivos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white h-100">
+              <img
+                src="assets/images/malware.jpg"
+                class="card-img-top"
+                alt="malware"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Malware</h5>
+                <p class="card-text">
+                  Malware es un término general para cualquier tipo de software
+                  diseñado para dañar, infiltrarse o explotar dispositivos,
+                  redes o servicios.
+                </p>
+                <p>Tipos comunes de malware:</p>
+                <ul>
+                  <li>
+                    Virus: Se adjunta a archivos legítimos y se propaga al
+                    ejecutarlos.
+                  </li>
+                  <li>
+                    Gusanos: Se replican automáticamente y se propagan a través
+                    de redes.
+                  </li>
+                  <li>
+                    Troyanos: Se disfrazan como programas legítimos, pero abren
+                    puertas traseras al atacante.
+                  </li>
+                  <li>
+                    Spyware: Espía al usuario para recolectar información sin su
+                    consentimiento.
+                  </li>
+                  <li>
+                    Adware: Muestra anuncios no deseados y puede espiar tu
+                    actividad.
+                  </li>
+                  <li>Rootkits: Permiten acceso remoto y oculto al sistema.</li>
+                  <li>
+                    Keyloggers: Registran todo lo que escribes en el teclado.
+                  </li>
+                </ul>
+                <p>
+                  Consecuencias: Robo de datos personales, control remoto del
+                  sistema, ralentización del equipo, pérdida de archivos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white h-100">
+              <img
+                src="assets/images/ddos.jpg"
+                class="card-img-top"
+                alt="ataques ddos"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ataques DDoS</h5>
+                <p class="card-text">
+                  Un DDoS (Distributed Denial of Service) es un ataque que busca
+                  hacer que un sitio web, servidor o red sea inaccesible al
+                  sobrecargarlo con una cantidad masiva de tráfico desde
+                  múltiples fuentes.
+                </p>
+                <p>¿Cómo funciona?</p>
+                <ul>
+                  <li>
+                    El atacante usa una botnet (red de computadoras infectadas)
+                    para enviar solicitudes masivas al objetivo.
+                  </li>
+                  <li>
+                    El servidor se satura y deja de responder a usuarios
+                    legítimos.
+                  </li>
+                </ul>
+                <p>Objetivos comunes:</p>
+                <ul>
+                  <li>Sitios web de empresas.</li>
+                  <li>Plataformas de juegos en línea.</li>
+                  <li>Infraestructuras gubernamentales o bancarias.</li>
+                </ul>
+                <p>
+                  Consecuencias: Pérdidas económicas, daño a la reputación,
+                  interrupción de servicios críticos.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card bg-dark text-white h-100">
-            <div class="card-body">
-              <h5 class="card-title">Ransomware</h5>
-              <p class="card-text">
-                Malware que cifra tus archivos y exige un rescate para
-                recuperarlos.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-dark text-white h-100">
-            <div class="card-body">
-              <h5 class="card-title">Malware</h5>
-              <p class="card-text">
-                Software malicioso diseñado para dañar o acceder a un sistema
-                sin permiso.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-dark text-white h-100">
-            <div class="card-body">
-              <h5 class="card-title">Ataques DDoS</h5>
-              <p class="card-text">
-                Ataques de denegación de servicio que saturan un servidor para
-                volverlo inaccesible.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
 
       <!-- Acordeón con ejemplos -->
-      <div class="accordion mt-5" id="accordionEjemplos">
-        <h2 class="mb-3">Casos Reales</h2>
+      <section class="container">
+        <div class="accordion mt-5" id="accordionEjemplos">
+          <h2 class="mb-3 text-center">Casos Reales</h2>
 
-        <div class="accordion-item bg-dark text-white">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button bg-secondary text-white"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#ejemplo1"
-            >
-              Phishing en Bancos (2022)
-            </button>
-          </h2>
-          <div id="ejemplo1" class="accordion-collapse collapse show">
-            <div class="accordion-body">
-              Miles de usuarios recibieron correos electrónicos falsos que
-              imitaban a su banco, robando datos personales.
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button bg-secondary text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ejemplo1"
+              >
+                Stuxnet (malware / ciberarma industrial – 2010)
+              </button>
+            </h2>
+            <div id="ejemplo1" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <p>
+                  Un gusano informático altamente sofisticado, diseñado para
+                  atacar sistemas SCADA y específicamente programar
+                  controladores PLC en plantas nucleares de Irán. Se estima que
+                  afectó el 60 % de los sistemas infectados en Irán, provocando
+                  daños físicos en centrifugadoras de enriquecimiento de uranio
+                </p>
+                <p>
+                  Se cree que fue desarrollado por los gobiernos de EE. UU. e
+                  Israel bajo el nombre "Operation Olympic Games" . Es el primer
+                  caso público de malware dirigido a infraestructura industrial,
+                  marcando el inicio de la ciberguerra moderna.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-secondary text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ejemplo2"
+              >
+                Ataques DDoS contra Dyn (2016)
+              </button>
+            </h2>
+            <div id="ejemplo2" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>
+                  El 21 de octubre de 2016, cientos de millones de dispositivos
+                  conectados a Internet (impulsados por el malware Mirai) se
+                  coordinaron para saturar Dyn, un proveedor crítico de DNS.
+                  Esto causó la caída de servicios populares como Twitter,
+                  Spotify y Reddit en Europa y Norteamérica.
+                </p>
+                <p>
+                  Este incidente alertó sobre cómo un botnet de IoT (impresoras,
+                  cámaras, routers) puede afectar servicios globales mediante
+                  ataques a gran escala.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button bg-secondary text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ejemplo1"
+              >
+                WannaCry (ransomware – 2017)
+              </button>
+            </h2>
+            <div id="ejemplo1" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <p>
+                  En mayo de 2017, esta criptoworm se propagó rápidamente por
+                  más de 200,000 dispositivos en 150 países, cifrando archivos y
+                  exigiendo rescates de 300 a 600 USD en Bitcoin.
+                </p>
+                <p>
+                  El ataque paralizó sistemas vitales, destacando el caso del
+                  NHS (Servicio Nacional de Salud del Reino Unido), que estimó
+                  perjuicios en torno a £92 millones (≈ 104 millones USD).
+                </p>
+                <p>
+                  Se basó en una vulnerabilidad llamada "EternalBlue",
+                  originalmente desarrollada por la NSA y filtrada por el grupo
+                  Shadow Brokers . Fue detenido gracias a un "killswitch"
+                  descubierto por un investigador, Marcus Hutchins.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="accordion-item bg-dark text-white">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed bg-secondary text-white"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#ejemplo2"
-            >
-              Ransomware WannaCry (2017)
-            </button>
-          </h2>
-          <div id="ejemplo2" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              Afectó a más de 200,000 computadoras en 150 países, cifrando
-              archivos y exigiendo pagos en Bitcoin.
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
     <footer>
       <h6 class="text-center text-white">WebDefensa 2025</h6>
