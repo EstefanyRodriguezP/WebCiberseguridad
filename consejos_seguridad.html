@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <!--bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -57,8 +57,95 @@
         </div>
       </nav>
     </header>
-    <main>
-      <h1>keusjgkesg</h1>
+
+    <main class="py-5">
+      <h1 class="text-center mb-4">Consejos para Navegar Seguro</h1>
+
+      <ul>
+        <li>Usa contraseñas seguras y únicas.</li>
+        <li>Habilita la autenticación de dos factores.</li>
+        <li>No compartas información sensible por correo o redes sociales.</li>
+        <li>Actualiza tu software regularmente.</li>
+        <li>Desconfía de enlaces o archivos adjuntos sospechosos.</li>
+      </ul>
+
+      <!-- Formulario -->
+      <h2 class="mt-5">Solicita más información</h2>
+      <form id="formContacto" class="mt-3">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required />
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+
+      <!-- Botón para abrir el modal -->
+      <button
+        class="btn btn-info mt-4"
+        data-bs-toggle="modal"
+        data-bs-target="#modalTest"
+      >
+        Realizar Test de Seguridad
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modalTest" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+              <h5 class="modal-title">Test de Seguridad</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>¿Qué es el phishing?</p>
+              <select id="respuestaTest" class="form-select">
+                <option>Un videojuego online</option>
+                <option>Una técnica de ataque para robar información</option>
+                <option>Una herramienta de seguridad</option>
+              </select>
+              <div id="feedbackTest" class="mt-3"></div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success" onclick="verificarRespuesta()">
+                Verificar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer>
+      <h6 class="text-center text-white">WebDefensa 2025</h6>
+    </footer>
+
+    <script defer>
+      function verificarRespuesta() {
+        const resp = document.getElementById("respuestaTest").value;
+        const feedback = document.getElementById("feedbackTest");
+        if (resp === "Una técnica de ataque para robar información") {
+          feedback.innerHTML = "<span class='text-success'>¡Correcto!</span>";
+        } else {
+          feedback.innerHTML =
+            "<span class='text-danger'>Incorrecto. Intenta de nuevo.</span>";
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("formContacto")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("¡Formulario enviado correctamente!");
+          });
+      });
+    </script>
   </body>
 </html>

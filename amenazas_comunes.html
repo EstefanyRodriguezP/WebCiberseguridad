@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <!--bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -57,8 +57,102 @@
         </div>
       </nav>
     </header>
-    <main>
-      <h1>keusjgkesg</h1>
+    <main class="py-5">
+      <h1 class="text-center mb-5">Amenazas Cibernéticas Comunes</h1>
+
+      <!-- Tarjetas -->
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card bg-dark text-white h-100">
+            <div class="card-body">
+              <h5 class="card-title">Phishing</h5>
+              <p class="card-text">
+                Suplantación de identidad para engañar al usuario y obtener
+                información confidencial.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100">
+            <div class="card-body">
+              <h5 class="card-title">Ransomware</h5>
+              <p class="card-text">
+                Malware que cifra tus archivos y exige un rescate para
+                recuperarlos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100">
+            <div class="card-body">
+              <h5 class="card-title">Malware</h5>
+              <p class="card-text">
+                Software malicioso diseñado para dañar o acceder a un sistema
+                sin permiso.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100">
+            <div class="card-body">
+              <h5 class="card-title">Ataques DDoS</h5>
+              <p class="card-text">
+                Ataques de denegación de servicio que saturan un servidor para
+                volverlo inaccesible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Acordeón con ejemplos -->
+      <div class="accordion mt-5" id="accordionEjemplos">
+        <h2 class="mb-3">Casos Reales</h2>
+
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button bg-secondary text-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ejemplo1"
+            >
+              Phishing en Bancos (2022)
+            </button>
+          </h2>
+          <div id="ejemplo1" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              Miles de usuarios recibieron correos electrónicos falsos que
+              imitaban a su banco, robando datos personales.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed bg-secondary text-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ejemplo2"
+            >
+              Ransomware WannaCry (2017)
+            </button>
+          </h2>
+          <div id="ejemplo2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Afectó a más de 200,000 computadoras en 150 países, cifrando
+              archivos y exigiendo pagos en Bitcoin.
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer>
+      <h6 class="text-center text-white">WebDefensa 2025</h6>
+    </footer>
   </body>
 </html>
